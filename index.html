@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+    <!--Let browser know website is optimized for mobile-->
+    <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection" />
+    <title>SignUp & SignIn</title>
+</head>
+
+<body>
+
+    <header class="site-header">
+        <div class="container">
+            <div class="row">
+                <div class="col l8">
+                    <h1 class="site-title center-align">Sign-up & Sign-in form + Cabinet</h1>
+                </div>
+                <div class="col l2">
+                    <button class="sign-in waves-effect waves-light btn" data-modal="#sign-up">Sign-Up</button>
+
+                </div>
+                <div class="col l2">
+                    <button class="sign-in waves-effect waves-light btn" data-modal="#sign-in">Sign-in</button>
+                </div>
+
+            </div>
+        </div>
+
+
+    </header>
+
+
+    <div class="modal-wrapper hide" id="sign-up">
+        <div class="modal-project sign-up-modal">
+            <button class="modal-project-close btn-floating waves-effect waves-light blue lighten-1" id="button-close"><i class="material-icons">close</i></button>
+            <div class="slider-wrapper">
+                <div class="slider-project ">
+                    <div class='left-part'>
+                        <form>
+
+                            <div class="row">
+                                <div class="input-field col l12">
+                                    <input placeholder="Name" id="signup-name" name="name" type="text" class="validate">
+                                    <label for="signup-name">Name</label>
+                                </div>
+                                <div class="input-field col l12">
+                                    <input placeholder="Password" id="signup-pass" name="pass" type="password" class="validate">
+                                    <label for="signup-pass">Password</label>
+                                </div>
+                                <div class="input-field col l12">
+                                    <input placeholder="Email" id="signup-email" name="email" type="text" class="validate">
+                                    <label for="signup-email">Email</label>
+                                </div>
+                                <div class="input-field col l12">
+                                    <input placeholder="Birthday" id="signup-birthday" name="birthday" type="text" class="validate datepicker">
+                                    <label for="signup-birthday">Birthday</label>
+                                </div>
+                                <div class="col l12">
+                                    <p>
+                                        <label>
+                        <input type="radio" value="male" name="sex" checked class="sex">
+                        <span>Male</span>
+                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                        <input type="radio" value="female" name="sex" class="sex">
+                        <span>Female</span>
+                        </label>
+                                    </p>
+                                    <p>
+                                        <label>
+                        <input type="radio" value="other" name="sex" class="sex">
+                        <span>Other</span>
+                        </label>
+                                    </p>
+                                </div>
+                                <div class="col l6">
+                                    <p>
+                                        <div class="switch">
+                                            <label>
+                                                      Off
+                                                      <input type="checkbox" id="switcher">
+                                                      <span class="lever"></span>
+                                                      On
+                                                    </label>
+                                        </div>
+                                    </p>
+                                </div>
+                                <div class="col l6">
+                                    <p class="read-rules">
+                                        (read rules)
+                                    </p>
+                                </div>
+                                <div class="col l12 right-align">
+                                    <button id="signup-submit" class="waves-effect waves-light btn disabled">Sign Up</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="right-part">
+                        <p class='go-back'>Go Back</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos commodi, laborum libero mollitia porro debitis, rem dignissimos eos beatae pariatur fuga itaque voluptatem sit est sequi cumque expedita nesciunt sapiente.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos commodi, laborum libero mollitia porro debitis, rem dignissimos eos beatae pariatur fuga itaque voluptatem sit est sequi cumque expedita nesciunt sapiente.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos commodi, laborum libero mollitia porro debitis, rem dignissimos eos beatae pariatur fuga itaque voluptatem sit est sequi cumque expedita nesciunt sapiente.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos commodi, laborum libero mollitia porro debitis, rem dignissimos eos beatae pariatur fuga itaque voluptatem sit est sequi cumque expedita nesciunt sapiente.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos commodi, laborum libero mollitia porro debitis, rem dignissimos eos beatae pariatur fuga itaque voluptatem sit est sequi cumque expedita nesciunt sapiente.</p>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos commodi, laborum libero mollitia porro debitis, rem dignissimos eos beatae pariatur fuga itaque voluptatem sit est sequi cumque expedita nesciunt sapiente.</p>
+                        <div class="slider-end">
+                            <p class='go-back'>Go Back</p>
+                            <p class="go-up">Go Up </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal-wrapper hide" id="sign-in">
+        <div class="modal-project">
+            <form id="sign-in-form">
+                <div class="row">
+                    <div class="input-field col l12">
+                        <input placeholder="Email" id="login-email" name="email" type="text" class="validate">
+                        <label for="login-email">Email</label>
+                    </div>
+                    <div class="input-field col l12">
+                        <input placeholder="Password" id="login-pass" name="pass" type="password" class="validate">
+                        <label for="login-pass">Password</label>
+                    </div>
+                    <div class="col l12 right-align">
+                        <button id="login-submit" class="waves-effect waves-light btn">Sign In</button>
+                    </div>
+                </div>
+            </form>
+            <button class="modal-project-close btn-floating waves-effect waves-light blue lighten-1" id="button-close"><i class="material-icons">close</i></button>
+        </div>
+    </div>
+    <script src="js/materialize.min.js"></script>
+    <script src="script/ajax.js"></script>
+    <script src="script/script.js"></script>
+    <script src="script/main.js"></script>
+</body>
+
+</html>
